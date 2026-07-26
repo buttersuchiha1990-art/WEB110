@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Eric Banks Form 07/23/2026-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Survey</title>
+<style>
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightskyblue;
+    margin: 20px;
+}
+/*Middle of Form*/
+.container {
+    max-width: 700px;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 6px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+header {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+header img {
+    max-width: 100px;
+    height: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+/*Survey Questions*/
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: darkcyan;
+}
+input,select {
+    padding: 10px;
+    border: 2px slategrey;
+    border-radius: 4px;
+    margin-bottom:20px;
+}
+input[type="radio"] {
+    margin: 0;
+}
+/* Multiple Choice Question*/
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+/*Reset and Submit*/
+button {
+  background-color: darkkhaki;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width:300px;
+}
+footer {
+   text-align:center;
+   margin-top: 20px;
+   padding-top: 15px;
+}
+    </style>
+
+</head>
+<body> 
+    <div class="container">
+        <header>
+            <img src="petlogo.jpg" alt="petlogo">
+            <h1>Pet Survey</h1>
+            <p>Tell me about your pets</p>
+        </header>
+        <main>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <div class="form-group">
+                <label for="yourName">Your Name</label>
+                <input type="text" id="yourName" name="yourName" required>
+                </div>
+                <div class="form-group">
+                    <label>Which do you like more?</label>
+                </div>
+                <div class="preference">
+                    <label for="dogs">I like dogs more</label>
+                    <input type="checkbox" id="dogs" name="dogs">
+                </div>
+                <div class="preference">
+                    <label for="cats">I like cats more</label>
+                    <input type="checkbox" id="cats" name="cats">
+                </div>
+                <div class="form-group">
+                <label>How many pets do you have?</label>
+                </div>
+                <div class="number of pets">
+                    <div class="radio-option">
+                        <input type="radio" id="One" name="numberPets" value="One">
+                        <label for="One">One</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="Two" name="numerPets" value="Two">
+                        <label for="Two">Two</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="Three" name="numberPets" value="Three">
+                        <label for="Three">Three</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="MorethanThree" name="numberPets" value="MorethanThree">
+                        <label for="MorethanThree">More than three</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="petNames">Name of pets</label>
+                    <input type="text" id="petNames" name="petNames" maxlength="65">
+                </div>
+                <div class="form-group">
+                    <label for="pet-info">More pet info</label>
+                    <textarea id="pet-info" name="pet-info" rows="4" placeholder="Tell me about your pets"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Today's Date</label>
+                    <input type="date" id="date" name="todayDate">
+                </div>
+                <div class="form-group">
+                    <button type="reset">Reset</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+        </form>
+     </main>
+ </div>
+<footer>
+    <p>&copy; 2026 Eric Banks. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Core Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fluid Design */
+.wrapper {
+    width: 90%;
+    margin: auto;
+    background: lightskyblue;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00001a;
+}
+body {
+    background: beige;
+    color: lightskyblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+/* Title and Nav alignmnents */
+header {
+    background: lightslategray;
+    color: whitesmoke;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+/* Title Picture */
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+h1 {
+    margin-top: 0px;
+    color: black;
+    font-weight: bold;
+    font-size:2em;
+}
+/* Nav Bar */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: sandybrown;
+}
+li {
+    margin: auto;
+    padding: 0;
+}
+nav a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+nav a:visited {
+    text-decoration: underline;
+    color:darkcyan;
+}
+nav a:hover {
+    background-color: snow;
+    color:darkblue;
+}
+/* Column layout */
+.container {
+    max-width: 700px;
+    background-color: beige;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Section Titles */
+h2 {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+/* My content */
+section {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+/* paragraph layout */
+p {
+    color: black;
+    text-align: left;
+}
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* main pictures */
+img {
+    height: 50%;
+    max-width: 70%;
+    opacity: .7;
+}
+footer {
+    background: lightcyan;
+    color: white;
+    text-align: center;
+}
+/* centers the footer */
+footer p {
+    text-align: center;
+}
